@@ -1,0 +1,12 @@
+// tag a data to specific scope
+// or trigger specific behavior
+module.exports = {
+  BASIC: 'BASIC',
+  MEDIA_SEGMENT: 'MEDIA_SEGMENT',
+  MEDIA_PLAYLIST: 'MEDIA_PLAYLIST',
+  MASTER_PLAYLIST: 'MASTER_PLAYLIST',
+  // Other behavior
+  TRALING_MEDIA_SEGMENT: 'TRAILING_MEDIA_SEGMENT',
+  URL_SEGMENT_ENDING: 'URL_SEGMENT_ENDING',
+  GROUPING: 'GROUPING',
+};

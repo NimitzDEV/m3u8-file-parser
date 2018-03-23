@@ -1,0 +1,35 @@
+{
+  "name": "m3u8-file-parser",
+  "version": "0.1.0",
+  "description": "A m3u8 file parser built against RFC8216",
+  "main": "index.js",
+  "author": "NimitzDEV",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.2.0"
+  },
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NimitzDEV/m3u8-file-parser.git"
+  },
+  "keywords": [
+    "m3u",
+    "m3u8"
+  ],
+  "bugs": {
+    "url": "https://github.com/NimitzDEV/m3u8-file-parser/issues"
+  },
+  "homepage": "https://github.com/NimitzDEV/m3u8-file-parser#readme"
+}

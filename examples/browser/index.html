@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>M3U8FileReader Browser Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../../dist/m3u8-file-parser.min.js"></script>
+  <script>
+    var reader = new M3U8FileReader();
+    var m3u8Content = `
+      #EXTM3U
+      #EXTINF:10, Sample Title
+      https://example.com/sample1.mp3
+
+      #EXTINF:10, Sample Title 2\n
+      https://example.com/sample2.mp3
+    `;
+
+    reader.read(m3u8Content);
+    console.log('result', reader.getResult());
+  </script>
+</head>
+<body>
+  <h2>See console for result</h2>
+</body>
+</html>

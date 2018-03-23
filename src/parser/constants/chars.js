@@ -1,0 +1,16 @@
+module.exports = {
+  SPACE: ' '.charCodeAt(0),
+  COLON: ':'.charCodeAt(0),
+  COMMA: ','.charCodeAt(0),
+  EQUAL: '='.charCodeAt(0),
+  QUOTE: '"'.charCodeAt(0),
+  MINUS: '-'.charCodeAt(0),
+  PERIOD: '.'.charCodeAt(0),
+  NEW_LINE_LF: '\n'.charCodeAt(0),
+  NEW_LINE_CR: '\r'.charCodeAt(0),
+  BACK_SLASH: '\\'.charCodeAt(0),
+  HASH: '#'.charCodeAt(0),
+  AT: '@'.charCodeAt(0),
+  NUMBER_START: '0'.charCodeAt(0),
+  NUMBER_STOP: '9'.charCodeAt(0),
+};

@@ -1,0 +1,39 @@
+#EXTM3U
+#EXT-X-VERSION:2
+#EXT-X-TARGETDURATION:6
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-DISCONTINUITY-SEQUENCE:1
+#EXT-X-START:PERCISE=NO,TIME-OFFSET=2.11
+#EXT-X-MEDIA-SEQUENCE:1
+#EXT-X-INDEPENDENT-SEGMENTS
+
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English",DEFAULT=YES,AUTOSELECT=YES,FORCED=NO,LANGUAGE="en",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog, public.accessibility.describes-music-and-sound",URI="subtitles/eng/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="English (Forced)",DEFAULT=NO,AUTOSELECT=NO,FORCED=YES,LANGUAGE="en",URI="subtitles/eng_forced/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Français",DEFAULT=NO,AUTOSELECT=YES,FORCED=NO,LANGUAGE="fr",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog, public.accessibility.describes-music-and-sound",URI="subtitles/fra/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Français (Forced)",DEFAULT=NO,AUTOSELECT=NO,FORCED=YES,LANGUAGE="fr",URI="subtitles/fra_forced/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Español",DEFAULT=NO,AUTOSELECT=YES,FORCED=NO,LANGUAGE="es",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog, public.accessibility.describes-music-and-sound",URI="subtitles/spa/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="Español (Forced)",DEFAULT=NO,AUTOSELECT=NO,FORCED=YES,LANGUAGE="es",URI="subtitles/spa_forced/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="日本語",DEFAULT=NO,AUTOSELECT=YES,FORCED=NO,LANGUAGE="ja",CHARACTERISTICS="public.accessibility.transcribes-spoken-dialog, public.accessibility.describes-music-and-sound",URI="subtitles/jpn/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="日本語 (Forced)",DEFAULT=NO,AUTOSELECT=NO,FORCED=YES,LANGUAGE="ja",URI="subtitles/jpn_forced/prog_index.m3u8"
+
+#EXT-X-SESSION-DATA:DATA-ID="com.example.lyrics",URI="lyrics.json"
+
+#EXT-X-SESSION-DATA:DATA-ID="com.example.title",LANGUAGE="en", \
+        VALUE="This is an example"
+#EXT-X-SESSION-DATA:DATA-ID="com.example.title",LANGUAGE="es", \
+        VALUE="Este es un ejemplo"
+
+#EXT-X-SESSION-KEY:METHOD=AES-128,URI="https://priv.example.com/key.php?r=52",IV=0x9c7db8778570d05c3177c349fd9236aa
+#EXT-X-STREAM-INF:BANDWIDTH=100,AVERAGE-BANDWIDTH=128,CODECS="MPEG-4;MPEG-2",RESOLUTION=1080,FRAME-RATE=29.97,HDCP-LEVEL="TYPE-0",AUDIO="AUDIO",VIDEO="VIDEO"
+#EXT-X-I-FRAME-STREAM-INF:BANDWIDTH=120,URI="THATFILE.M3U8"
+#EXT-X-BYTERANGE:100@10
+#EXT-X-DISCONTINUITY
+#EXT-X-KEY:METHOD=AES-128,URI="https://priv.example.com/key.php?r=52",IV=0x9c7db8778570d05c3177c349fd9236aa
+#EXT-X-MAP:URI="https://example.map.uri",BYTERANGE="300@0"
+#EXT-X-PROGRAM-DATE-TIME:2010-02-19T14:54:23.031+08:00
+#EXT-X-DATERANGE:ID="ITS ID",CLASS="ITS CLASS",START-DATE="2010-02-19T14:54:23.031+08:00",END-DATE="2010-02-19T14:54:23.031+08:00",DURATION=1.33,PLANNED-DURATION=2.33
+#EXTINF:23.222 tvg-logo="haha,  ddd" tvg-aa="sb@" tag=sa, Sample artist, : - Sample title
+C:\Documents and Settings\I\My Music\Sample.mp3
+
+#EXT-X-ENDLIST
+#COMMENT YAS
