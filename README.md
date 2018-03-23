@@ -1,6 +1,6 @@
 # m3u8-file-parser
 
-A m3u/m3u8 file parser build against [RFC8219](https://tools.ietf.org/html/rfc8216) specs.
+A m3u/m3u8 file parser build against [RFC8216](https://tools.ietf.org/html/rfc8216 specs.
 
 ## Installation
 
