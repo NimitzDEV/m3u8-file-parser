@@ -32,10 +32,8 @@ class M3U8FileParser {
     let crPosition = 0;
     let lfPosition = 0;
     let colonPosition = 0;
-    let lineContinueSlashPosition = 0;
 
     let content = '';
-    let previousLine = '';
 
     for (let pos = 0; pos < contentLength; pos++) {
       // find CR/LF position
@@ -45,9 +43,7 @@ class M3U8FileParser {
 
       // slice between current position and CR/LF position
       // should be the new line
-      content = previousLine + str.slice(pos, crPosition).trim();
-
-      previousLine = '';
+      content = str.slice(pos, crPosition).trim();
 
       pos = crPosition;
 
@@ -56,18 +52,11 @@ class M3U8FileParser {
       isExtTag = content.slice(0, 4) === '#EXT';
       colonPosition = (isExtTag && content.indexOf(':')) || -1;
 
-      // if is an EXT tag, allow \ and read the next line
-      // as the same line
-      lineContinueSlashPosition = (isExtTag && content.lastIndexOf('\\')) || -1;
-      lineContinueSlashPosition === content.length - 1 &&
-        ((previousLine = content.slice(0, content.length - 1)), (content = ''));
-
       tag = isExtTag && ~colonPosition && content.slice(0, colonPosition);
       !tag && isHashLeading && (tag = content);
 
       // invoke parser if read line finished
-      !previousLine &&
-        this.invokeParser(tag, content.slice(colonPosition + 1), isHashLeading);
+      this.invokeParser(tag, content.slice(colonPosition + 1), isHashLeading);
     }
   }
 
