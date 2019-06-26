@@ -4,7 +4,7 @@ const camelCase = require('./camelCase');
 
 const BOOLEAN_MAP = {
   YES: true,
-  NO: true,
+  NO: false,
 };
 
 function booleanTranslator(value) {
