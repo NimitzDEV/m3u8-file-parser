@@ -11,7 +11,7 @@ A m3u/m3u8 file parser build against [RFC8216](https://tools.ietf.org/html/rfc82
 In Node.js
 
 ```javascript
-const M3U8FileParser = require('m3u8-file-reader');
+const M3U8FileParser = require('m3u8-file-parser');
 const fs = require('fs');
 const content = fs.readFileSync('./example.m3u8', { encoding: 'utf-8'});
 
@@ -24,7 +24,7 @@ reader.reset(); // Optional, If you want to parse a new file, call reset()
 In Node.js read line by line
 
 ```javascript
-const M3U8FileParser = require('m3u8-file-reader');
+const M3U8FileParser = require('m3u8-file-parser');
 const fs = require('fs');
 const content = fs.readFileSync('./example.m3u8', { encoding: 'utf-8'});
 const readline = require('readline');
