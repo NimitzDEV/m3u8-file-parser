@@ -1,6 +1,7 @@
 const REGEX_QUOTE = /\"/g;
 const REGEX_NONE_WORD = /\W/g;
 const CHAR_CODE = require('./constants/chars');
+const camelCase = require('./libs/camelCase');
 
 function extinf(str) {
   let findingHeader = true;
@@ -54,7 +55,7 @@ function extinf(str) {
         token = str.slice(pos + 1, match.index);
         pos = (match && match.index) || pos;
 
-        attr && (extData[attr] = token);
+        attr && (extData[camelCase(attr)] = token);
 
         token = '';
         attr = '';
@@ -74,7 +75,7 @@ function extinf(str) {
             match.index - 1) ||
           (match && match.index) ||
           pos;
-        attr && (extData[attr] = token);
+        attr && (extData[camelCase(attr)] = token);
         token = '';
         attr = '';
         continue;

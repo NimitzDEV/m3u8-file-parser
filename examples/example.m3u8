@@ -18,10 +18,8 @@
 
 #EXT-X-SESSION-DATA:DATA-ID="com.example.lyrics",URI="lyrics.json"
 
-#EXT-X-SESSION-DATA:DATA-ID="com.example.title",LANGUAGE="en", \
-        VALUE="This is an example"
-#EXT-X-SESSION-DATA:DATA-ID="com.example.title",LANGUAGE="es", \
-        VALUE="Este es un ejemplo"
+#EXT-X-SESSION-DATA:DATA-ID="com.example.title",LANGUAGE="en", VALUE="This is an example"
+#EXT-X-SESSION-DATA:DATA-ID="com.example.title",LANGUAGE="es", VALUE="Este es un ejemplo"
 
 #EXT-X-SESSION-KEY:METHOD=AES-128,URI="https://priv.example.com/key.php?r=52",IV=0x9c7db8778570d05c3177c349fd9236aa
 #EXT-X-STREAM-INF:BANDWIDTH=100,AVERAGE-BANDWIDTH=128,CODECS="MPEG-4;MPEG-2",RESOLUTION=1080,FRAME-RATE=29.97,HDCP-LEVEL="TYPE-0",AUDIO="AUDIO",VIDEO="VIDEO"

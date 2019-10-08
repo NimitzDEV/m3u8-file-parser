@@ -4,4 +4,4 @@ const content = fs.readFileSync('../example.m3u8', { encoding: 'utf-8'});
 
 const reader = new M3U8FileParser();
 reader.read(content);
-console.log(reader.getResult());
+console.log(JSON.stringify(reader.getResult(), null, 2));
