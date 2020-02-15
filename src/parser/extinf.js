@@ -33,7 +33,7 @@ function extinf(str) {
   ) {
     extData.duration += str[tmpPos];
     tmpPos++;
-    code = str[tmpPos].charCodeAt(0);
+    code = tmpPos > str.length - 1 ? '' : str[tmpPos].charCodeAt(0);
   }
 
   extData.duration = (extData.duration && parseFloat(extData.duration)) || -1;
