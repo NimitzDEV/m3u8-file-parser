@@ -4,15 +4,7 @@ const ParserLayer = require('./parser/map');
 
 class M3U8FileParser {
   constructor() {
-    this.default = {
-      isExtendedM3U: false,
-      segments: [],
-    };
-
-    this.trailingData = {};
-
-    this.currentSegmentData = {};
-    this.result = Object.assign({}, this.default);
+    this.reset();
   }
 
   /**
@@ -153,7 +145,12 @@ class M3U8FileParser {
    * Reset the result
    */
   reset() {
-    this.result = Object.assign({}, this.default);
+    this.trailingData = {};
+    this.currentSegmentData = {};
+    this.result = {
+      isExtendedM3U: false,
+      segments: [],
+    };
   }
 }
 
