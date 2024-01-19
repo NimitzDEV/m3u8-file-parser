@@ -1,5 +1,8 @@
 # m3u8-file-parser
 
+version 1.0.0 is being developing, in this version, it will introduce typescript support and builder support.
+with builder, you can write the content back to m3u8 file. 
+
 A m3u/m3u8 file parser build against [RFC8216](https://tools.ietf.org/html/rfc8216) specs.
 
 ## Installation
