@@ -81,6 +81,10 @@ function extinf(str) {
         continue;
       }
       case CHAR_CODE.COMMA:
+        if (/^\s*[^\s,="]+=/.test(str.slice(pos + 1))) {
+          token = '';
+          continue;
+        }
         // read track title
         extData.title = str.slice(pos + 1, str.length).trimLeft();
         pos = str.length;
